@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #ff6f61;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #888;
+            font-size: 1.2em;
+        }
+        .product button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .product button:hover {
+            background: #ff4f3d;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body><div class="filters">
+    <h3>Filter by Category</h3>
+    <ul>
+        <li><input type="checkbox"> Electronics</li>
+        <li><input type="checkbox"> Clothing</li>
+        <li><input type="checkbox"> Home Appliances</li>
+    </ul>
+    <h3>Price Range</h3>
+    <input type="range" min="0" max="1000" step="10">
+</div>
+
+<div class="user-login">
+    <h3>Login</h3>
+    <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<div class="newsletter">
+    <h3>Subscribe to our Newsletter</h3>
+    <input type="email" placeholder="Enter your email">
+    <button type="submit">Subscribe</button>
+</div>
+
+<header>
+    <h1>Welcome to My ETSY Store</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="signs.png"Product 1">
+            <h3>baby gifts</h3>
+            <p>$299.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="baby gifts.png"Product 2">
+            <h3>Laptop</h3>
+            <p>$799.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="pendent necklaces.png" alt="Product 3">
+            <h3>Headphones</h3>
+            <p>$49.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="wall decor img.png" alt="Product 4">
+            <h3>Smartwatch</h3>
+            <p>$199.00</p>
+
+
+
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Home and living.png" alt="Product 5">
+            <h3>Camera</h3>
+            <p>$499.00</p> </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </div>
+            <div>
+            <footer>
+                <p>&copy; 2023 My EtsyStore. All rights reserved.</p>
+            </footer></div>
+
+            
